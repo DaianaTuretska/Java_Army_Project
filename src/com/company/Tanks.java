@@ -5,6 +5,9 @@ public class Tanks extends Equipment {
     private String category;
     private int damage;
 
+    Tanks() {
+    }
+
     public Tanks(String name, String category, int countEquipment, int damage) {
 
         super(name, countEquipment);
@@ -29,10 +32,13 @@ public class Tanks extends Equipment {
     }
 
     public String toString() {
-        return "name: "+ getName() + " , category:" + category + " , damage:" + damage;
+        return "name: " + getName() + " , category:" + category + " , damage:" + damage;
+    }
+
+    final void TanksMethod(String[] arg) {
+        System.out.println("Tanks ready!");
     }
 
     public void display() {
-
     }
 }

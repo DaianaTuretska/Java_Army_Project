@@ -1,21 +1,21 @@
 package com.company;
 
-class Conscripts extends Person {
+public class Conscripts extends Person {
 
     private boolean suitable;
     private String address;
     private String phone;
 
-    public Conscripts(String name, String lastname, String address, String phone, int age, boolean suitable) {
+    Conscripts() {
+    }
 
-        super(name, lastname, age);
+    public Conscripts(String name, String lastname, String address, String phone, int year_birthday, boolean suitable) {
+
+        super(name, lastname, year_birthday);
         this.address = address;
         this.suitable = suitable;
         this.phone = phone;
 
-    }
-
-    public void display() {
     }
 
     public String getAddress() {
@@ -42,8 +42,17 @@ class Conscripts extends Person {
         this.phone = phone;
     }
 
-    public String toString(){
-        return "Name: "+getName()+" , Lastname: "+getLastname()+" "+ ", suitable:"+suitable+", address :"+address+", phone:"+phone;
+    public int Age(int year_birthday) {
+        int year_now = 2022;
+        return year_now - year_birthday;
+    }
+
+    public String toString() {
+        return "Name: " + getName() + " , Lastname: " + getLastname() + " " + ", suitable:" + suitable + ", address :" + address + ", phone:" + phone + ", age" + Age(1990);
+    }
+
+    public void display() {
+        System.out.println(toString());
     }
 }
 

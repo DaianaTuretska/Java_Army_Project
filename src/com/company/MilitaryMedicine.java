@@ -6,6 +6,9 @@ public class MilitaryMedicine extends Army {
     private String rank;
     private String equipment;
 
+    MilitaryMedicine() {
+    }
+
     public MilitaryMedicine(String name, String rank, int countPerson, int battalions, String equipment, String categories) {
         super(name, countPerson);
         this.rank = rank;
@@ -51,11 +54,10 @@ public class MilitaryMedicine extends Army {
     }
 
     public String toString() {
-        return "name:"+getName() + " count person:" + getCountPerson() + "rank:"+ rank + " equipment:" + equipment +" battalions:"+ battalions;
+        return "name:" + getName() + " count person:" + getCountPerson() + "rank:" + rank + " equipment:" + equipment + " battalions:" + battalions;
     }
 
     public void display() {
-
     }
 }
 

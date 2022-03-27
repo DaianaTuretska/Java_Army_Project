@@ -1,8 +1,11 @@
 package com.company;
 
-class AirForce extends Army {
+public class AirForce extends Army {
     private int battalions;
     private String equipment;
+
+    AirForce() {
+    }
 
     public AirForce(String name, int battalions, int countPerson, String equipment) {
 
@@ -30,12 +33,12 @@ class AirForce extends Army {
     public void setEquipment(String equipment) {
         this.equipment = equipment;
     }
+
     public String toString() {
-        return "name:"+getName() + ", count person:" + getCountPerson() + ", battalions" + battalions +", equipment" + equipment;
+        return "name:" + getName() + ", count person:" + getCountPerson() + ", battalions" + battalions + ", equipment" + equipment;
     }
 
     public void display() {
-
     }
 }
 

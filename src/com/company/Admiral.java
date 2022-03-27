@@ -1,6 +1,6 @@
 package com.company;
 
-class Admiral extends Rank {
+public final class Admiral extends Rank {
     private String subdivision;
     private String typeArmy;
     private String badge;
@@ -52,8 +52,7 @@ class Admiral extends Rank {
         return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
 
-        public void display() {
-
+    public void display() {
     }
 }
 

@@ -1,10 +1,13 @@
 package com.company;
 
-class OfficerCadet extends Rank {
+public final class OfficerCadet extends Rank {
     private String subdivision;
     private String typeArmy;
     private String badge;
     private String category;
+
+    OfficerCadet() {
+    }
 
     public OfficerCadet(String typeArmy, String name, String category, String badge, String subdivision) {
 
@@ -52,7 +55,6 @@ class OfficerCadet extends Rank {
         return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
 
-        public void display() {
-
+    public void display() {
     }
 }

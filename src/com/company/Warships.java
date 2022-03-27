@@ -1,19 +1,18 @@
 package com.company;
 
-public class Warships extends Equipment {
+public class Warships extends Equipment implements IWarship {
 
     private String category;
     private int water_tonnage;
+
+    Warships() {
+    }
 
     public Warships(String name, String category, int countEquipment, int water_tonnage) {
 
         super(name, countEquipment);
         this.category = category;
         this.water_tonnage = water_tonnage;
-    }
-
-    public void display() {
-
     }
 
     public String getCategory() {
@@ -36,14 +35,17 @@ public class Warships extends Equipment {
         return getName() + "" + category + " " + water_tonnage + "ton";
     }
 
-    public static void main(String args[]) {
-        Warships s1 = new Warships("М361«Balta»", "Minelayer", 40, 27000);
-        Warships s2 = new Warships("P170«Skadovsk»", "Patrol boat", 60, 70000);
-        Warships s3 = new Warships("A500«Dombas»", "Control ship", 80, 17000);
+    @Override
+    public void arrived_at_port() {
+        System.out.println("The ship arrived at the port!");
+    }
 
+    @Override
+    public void sailed() {
+        System.out.println("The ship sailed!");
+    }
 
-        System.out.println(s1);
-        System.out.println(s2);
+    public void display() {
     }
 }
 

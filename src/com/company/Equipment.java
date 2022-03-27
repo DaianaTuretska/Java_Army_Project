@@ -5,6 +5,9 @@ public abstract class Equipment {
     private String name;
     private int countEquipment;
 
+    Equipment() {
+    }
+
     public String getName() {
         return name;
     }

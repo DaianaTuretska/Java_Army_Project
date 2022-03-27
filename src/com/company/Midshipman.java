@@ -1,8 +1,8 @@
 package com.company;
 
-public class Midshipman extends Rank {
+public final class Midshipman extends Rank {
     private String subdivision;
-    private String typeArmy;
+    final String typeArmy = "Marine Corps";
     private String badge;
     private String category;
 
@@ -12,7 +12,6 @@ public class Midshipman extends Rank {
         this.badge = badge;
         this.subdivision = subdivision;
         this.category = category;
-        this.typeArmy = typeArmy;
     }
 
     public String getBadge() {
@@ -35,9 +34,6 @@ public class Midshipman extends Rank {
         this.badge = badge;
     }
 
-    public void setTypeArmy(String typeArmy) {
-        this.typeArmy = typeArmy;
-    }
 
     public void setSubdivision(String subdivision) {
         this.subdivision = subdivision;
@@ -50,7 +46,7 @@ public class Midshipman extends Rank {
     public String toString() {
         return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
-        public void display() {
 
+    public void display() {
     }
 }

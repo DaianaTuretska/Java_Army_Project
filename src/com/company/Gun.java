@@ -1,9 +1,11 @@
 package com.company;
 
-public class Gun extends Equipment {
-
+public class Gun extends Equipment implements IGun {
     private String category;
     private int caliber;
+
+    Gun() {
+    }
 
     public Gun(String name, String category, int countEquipment, int caliber) {
 
@@ -12,8 +14,15 @@ public class Gun extends Equipment {
         this.caliber = caliber;
     }
 
-    public void display() {
 
+    @Override
+    public void charge() {
+        System.out.println("The gun charge!");
+    }
+
+    @Override
+    public void shot() {
+        System.out.println("The gun shoot!");
     }
 
     public String getCategory() {
@@ -33,7 +42,10 @@ public class Gun extends Equipment {
     }
 
     public String toString() {
-        return "name: "+getName() + " , category" + category + " , caliber:" + caliber;
+        return "name: " + getName() + " , category" + category + " , caliber:" + caliber;
+    }
+
+    public void display() {
     }
 }
 

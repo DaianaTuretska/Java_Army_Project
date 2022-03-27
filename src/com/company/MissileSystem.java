@@ -1,19 +1,18 @@
 package com.company;
 
-public class InfantryWeapons extends Equipment {
+public class MissileSystem extends Equipment {
 
     private String category;
     private int power;
 
-    InfantryWeapons() {
+    MissileSystem() {
     }
 
-    public InfantryWeapons(String name, String category, int countEquipment, int power) {
+    public MissileSystem(String name, String category, int countEquipment, int power) {
 
         super(name, countEquipment);
         this.category = category;
     }
-
 
     public String getCategory() {
         return category;
@@ -23,19 +22,14 @@ public class InfantryWeapons extends Equipment {
         return power;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
     public void setPower(int power) {
         this.power = power;
     }
 
-    public String toString() {
-        return "name: " + getName() + " , category:" + category + " , power:" + power + "mm";
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public void display() {
     }
 }
-

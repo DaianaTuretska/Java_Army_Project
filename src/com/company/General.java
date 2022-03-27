@@ -1,6 +1,7 @@
 package com.company;
 
-class General extends Rank {
+public final class General extends Rank {
+
     private String subdivision;
     private String typeArmy;
     private String badge;
@@ -32,11 +33,10 @@ class General extends Rank {
     }
 
     public String toString() {
-        return  "name:" + getName() + " , typeArmy: " + typeArmy +", subdivision:"+ subdivision + ", badge:" + badge +", category:"+ category;
+        return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
 
     public void display() {
-
     }
 }
 

@@ -4,6 +4,9 @@ public class LandMilitary extends Army {
     private int battalions;
     private String equipment;
 
+    LandMilitary() {
+    }
+
     public LandMilitary(String name, int countPerson, int battalions, String equipment) {
 
         super(name, countPerson);
@@ -32,11 +35,10 @@ public class LandMilitary extends Army {
     }
 
     public String toString() {
-        return "name:"+ getName() + " , count person:" + getCountPerson() + " , battalions: " + battalions +", equipment:" + equipment ;
+        return "name:" + getName() + " , count person:" + getCountPerson() + " , battalions: " + battalions + ", equipment:" + equipment;
     }
 
     public void display() {
-
     }
 }
 

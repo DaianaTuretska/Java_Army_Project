@@ -4,29 +4,47 @@ public abstract class Person {
 
     private String name;
     private String lastname;
-    private int age;
+    private int year_birthday;
 
-    public Person(String name,String lastname, int age){
-        this.name=name;
-        this.lastname=lastname;
-        this.age=age;
+    Person() {
     }
-    public String getName() { return name; }
 
-    public String getLastname() { return lastname; }
+    public Person(String name, String lastname, int year_birthday) {
+        this.name = name;
+        this.lastname = lastname;
+        this.year_birthday = year_birthday;
+    }
 
-    public int getAge() { return age; }
+    public String getName() {
+        return name;
+    }
 
-    public void setName(String name) {this.name = name;}
+    public String getLastname() {
+        return lastname;
+    }
 
-    public void setLastname(String lastname) {this.lastname = lastname;}
+    public int getAge() {
+        return year_birthday;
+    }
 
-    public void setAge(String age) {this.name = age;}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public void setYear_birthday(String year_birthday) {
+        this.name = year_birthday;
+    }
+
+    abstract int Age(int year_birthday);
+
+    public String toString() {
+        return name + " " + lastname + " " + year_birthday;
+    }
 
     public abstract void display();
-
-    public String toString(){
-        return name+" "+lastname+" "+age;
-    }
 }
 

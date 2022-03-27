@@ -1,6 +1,6 @@
 package com.company;
 
-class Lieutenant extends Rank {
+public final class Lieutenant extends Rank {
     private String subdivision;
     private String typeArmy;
     private String badge;
@@ -48,10 +48,9 @@ class Lieutenant extends Rank {
     }
 
     public String toString() {
-        return  "name:" + getName() + " , typeArmy: " + typeArmy +", subdivision:"+ subdivision + ", badge:" + badge +", category:"+ category;
+        return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
 
     public void display() {
-
     }
 }

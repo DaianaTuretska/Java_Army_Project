@@ -5,6 +5,9 @@ public abstract class Army {
     private String name;
     private int countPerson;
 
+    Army() {
+    }
+
     public String getName() {
         return name;
     }

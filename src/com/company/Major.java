@@ -1,11 +1,10 @@
 package com.company;
 
-class Major extends Rank {
+public final class Major extends Rank {
     private String subdivision;
     private String typeArmy;
     private String badge;
     private String category;
-    ;
 
     public Major(String typeArmy, String name, String category, String badge, String subdivision) {
 
@@ -49,10 +48,9 @@ class Major extends Rank {
     }
 
     public String toString() {
-        return  "name:" + getName() + " , typeArmy: " + typeArmy +", subdivision:"+ subdivision + ", badge:" + badge +", category:"+ category;
+        return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
 
     public void display() {
-
     }
 }
