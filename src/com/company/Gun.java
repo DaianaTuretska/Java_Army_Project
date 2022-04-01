@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.interfaces.IGun;
+
 public class Gun extends Equipment implements IGun {
     private String category;
     private int caliber;

@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.interfaces.IWarship;
+
 public class Warships extends Equipment implements IWarship {
 
     private String category;

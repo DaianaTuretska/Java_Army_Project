@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.interfaces.IAviation;
+
 public class Aviation extends Equipment implements IAviation {
 
     private String category;
