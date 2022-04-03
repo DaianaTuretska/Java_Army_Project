@@ -1,23 +1,23 @@
 package com.company.exeptions;
 
-public class CountOfGunsException extends Exception{
+public class CountEquipException extends Exception{
 
-    public CountOfGunsException() {
+    public CountEquipException() {
         }
 
-    public CountOfGunsException(String message) {
+    public CountEquipException(String message) {
             super(message);
         }
 
-    public CountOfGunsException(String message, Throwable cause) {
+    public CountEquipException(String message, Throwable cause) {
             super(message, cause);
         }
 
-    public CountOfGunsException(Throwable cause) {
+    public CountEquipException(Throwable cause) {
             super(cause);
         }
 
-    public CountOfGunsException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public CountEquipException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
             super(message, cause, enableSuppression, writableStackTrace);
         }
     }

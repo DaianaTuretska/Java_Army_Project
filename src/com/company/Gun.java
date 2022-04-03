@@ -1,8 +1,9 @@
 package com.company;
-
+import org.apache.log4j.Logger;
 import com.company.interfaces.IGun;
 
 public class Gun extends Equipment implements IGun {
+    private static final Logger LOGGER = Logger.getLogger(Gun.class);
     private String category;
     private int caliber;
 

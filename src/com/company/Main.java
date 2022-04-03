@@ -1,8 +1,9 @@
 package com.company;
-
+import  org.apache.log4j.Logger;
 public class Main {
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
+
         System.out.println("Conscripts\n");
         Conscripts s1=new Conscripts("Darius","Raj","Kobulyanska street", "+38099425262779",2000, true);
         Conscripts s2=new Conscripts("Brandon","Debonair","Golovna street", "+380669232110",1998, false);
@@ -40,6 +41,7 @@ public class Main {
         System.out.println(s1);System.out.println(s2);System.out.println("\nArmy\n");System.out.println(s3);System.out.println(s4);System.out.println(s5);System.out.println("\nRank\n");System.out.println(s6);System.out.println(s7);System.out.println(s8);System.out.println(s9);System.out.println(s10);
         System.out.println(s11);System.out.println(s12);System.out.println(s13);System.out.println(s14);System.out.println(s15);System.out.println(s16);System.out.println(s17);System.out.println(s18);System.out.println(s19);System.out.println(s20);
         System.out.println(s21);System.out.println("\nEquipment\n");System.out.println(s22);System.out.println(s23);System.out.println(s24);System.out.println(s25);System.out.println(s26);System.out.println(s27);System.out.println(s28);System.out.println(s29);System.out.println(s30);
+
     }
 }
 

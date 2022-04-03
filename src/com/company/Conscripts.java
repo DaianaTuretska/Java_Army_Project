@@ -1,9 +1,10 @@
 package com.company;
 
 import com.company.exeptions.AgeNotMustBeNullException;
-
+import org.apache.log4j.Logger;
 public class Conscripts extends Person {
 
+    private static final Logger LOGGER = Logger.getLogger(Conscripts.class);
     private boolean suitable;
     private String address;
     private String phone;
@@ -46,20 +47,21 @@ public class Conscripts extends Person {
     }
 
     public int Age(int year_birthday) {
-        int year_now = 2022;
+        int yearNow = 2022;
         int age;
-        age = year_now - year_birthday;
+        age = yearNow - year_birthday;
         return age;
     }
     public int setAge(int age){
-        if (age > 0) {
+        if (age > 18) {
         this.age = age;
     } else {
-        System.out.println("Age not must be 0");
+        System.out.println("Age not must be > 18");
         try {
             throw new AgeNotMustBeNullException();
         } catch (AgeNotMustBeNullException e) {
             e.printStackTrace();
+            LOGGER.debug(e.getMessage());
         }
     }
         return age;
