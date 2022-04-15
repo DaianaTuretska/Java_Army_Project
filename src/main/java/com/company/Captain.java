@@ -8,7 +8,6 @@ public final class Captain extends Rank {
     private String category;
 
     public Captain(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;

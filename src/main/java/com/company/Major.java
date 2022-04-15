@@ -1,13 +1,13 @@
 package com.company;
 
 public final class Major extends Rank {
+
     private String subdivision;
     private String typeArmy;
     private String badge;
     private String category;
 
     public Major(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;

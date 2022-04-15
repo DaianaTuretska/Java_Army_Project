@@ -6,16 +6,15 @@ public abstract class Rank {
 
     Rank() {
     }
+    public Rank(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = name;
-    }
-
-    public Rank(String name) {
         this.name = name;
     }
 

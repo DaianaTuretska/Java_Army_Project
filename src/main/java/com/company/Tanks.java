@@ -9,7 +9,6 @@ public class Tanks extends Equipment {
     }
 
     public Tanks(String name, String category, int countEquipment, int damage) {
-
         super(name, countEquipment);
         this.category = category;
         this.damage = damage;

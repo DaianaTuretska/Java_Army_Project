@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.exeptions.AgeNotMustBeNullException;
 import org.apache.log4j.Logger;
+
 public class Conscripts extends Person {
 
     private static final Logger LOGGER = Logger.getLogger(Conscripts.class);
@@ -11,10 +12,11 @@ public class Conscripts extends Person {
     private int age;
 
     Conscripts() {
+
     }
 
-    public Conscripts(String name, String lastname, String address, String phone, int year_birthday, boolean suitable) {
 
+    public Conscripts(String name, String lastname, String address, String phone, int year_birthday, boolean suitable) {
         super(name, lastname, year_birthday);
         this.address = address;
         this.suitable = suitable;

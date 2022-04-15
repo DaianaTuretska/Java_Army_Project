@@ -1,6 +1,7 @@
 package com.company;
 
 public class MarineCorps extends Army {
+
     private int battalions;
     private String equipment;
 
@@ -8,7 +9,6 @@ public class MarineCorps extends Army {
     }
 
     public MarineCorps(String name, int countPerson, int battalions, String equipment) {
-
         super(name, countPerson);
         this.battalions = battalions;
         this.equipment = equipment;

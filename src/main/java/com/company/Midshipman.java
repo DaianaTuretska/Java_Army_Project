@@ -1,13 +1,14 @@
 package com.company;
 
 public final class Midshipman extends Rank {
+
     private String subdivision;
     final String typeArmy = "Marine Corps";
     private String badge;
     private String category;
-
+    Midshipman(){
+    }
     public Midshipman(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;

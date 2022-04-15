@@ -8,7 +8,6 @@ public final class General extends Rank {
     private String category;
 
     public General(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;
@@ -32,11 +31,25 @@ public final class General extends Rank {
         return typeArmy;
     }
 
+    public void setBadge(String badge) {
+        this.badge = badge;
+    }
+
+    public void setTypeArmy(String typeArmy) {
+        this.typeArmy = typeArmy;
+    }
+
+    public void setSubdivision(String subdivision) {
+        this.subdivision = subdivision;
+    }
+
+
     public String toString() {
         return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
     }
 
     public void display() {
     }
+    //add set
 }
 

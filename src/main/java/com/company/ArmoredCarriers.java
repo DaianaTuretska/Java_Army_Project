@@ -10,7 +10,6 @@ public class ArmoredCarriers extends Equipment {
     }
 
     public ArmoredCarriers(String name, String category, String combat_module, int countEquipment, int power_reserve) {
-
         super(name, countEquipment);
         this.category = category;
         this.powerReserve = powerReserve;

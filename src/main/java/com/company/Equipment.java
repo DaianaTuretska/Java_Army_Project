@@ -3,14 +3,19 @@ package com.company;
 import com.company.exeptions.AgeNotMustBeNullException;
 import com.company.exeptions.CountEquipException;
 import org.apache.log4j.Logger;
+
 public abstract class Equipment {
+
     private static final Logger LOGGER = Logger.getLogger(Equipment.class);
     private String name;
     private int countEquipment;
 
     Equipment() {
     }
-
+    public Equipment(String name, int countEquipment) {
+        this.countEquipment = countEquipment;
+        this.name = name;
+    }
     public String getName() {
         return name;
     }
@@ -27,11 +32,7 @@ public abstract class Equipment {
         this.name = countEquipment;
     }
 
-    public Equipment(String name, int countEquipment) {
 
-        this.countEquipment = countEquipment;
-        this.name = name;
-    }
     public int setCountEquipment(int countEquipment){
         if (countEquipment > 0) {
             this.countEquipment = countEquipment;

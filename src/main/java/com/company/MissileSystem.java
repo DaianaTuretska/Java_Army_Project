@@ -9,7 +9,6 @@ public class MissileSystem extends Equipment {
     }
 
     public MissileSystem(String name, String category, int countEquipment, int power) {
-
         super(name, countEquipment);
         this.category = category;
     }

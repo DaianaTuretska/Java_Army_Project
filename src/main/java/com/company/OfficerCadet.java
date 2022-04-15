@@ -1,6 +1,7 @@
 package com.company;
 
 public final class OfficerCadet extends Rank {
+
     private String subdivision;
     private String typeArmy;
     private String badge;
@@ -10,7 +11,6 @@ public final class OfficerCadet extends Rank {
     }
 
     public OfficerCadet(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;

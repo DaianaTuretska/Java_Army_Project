@@ -7,7 +7,10 @@ public abstract class Army {
 
     Army() {
     }
-
+    public Army(String name, int countPerson) {
+        this.name = name;
+        this.countPerson = countPerson;
+    }
     public String getName() {
         return name;
     }
@@ -24,11 +27,7 @@ public abstract class Army {
         this.name = countPerson;
     }
 
-    public Army(String name, int countPerson) {
 
-        this.name = name;
-        this.countPerson = countPerson;
-    }
 
     public abstract void display();
 

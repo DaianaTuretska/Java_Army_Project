@@ -1,13 +1,13 @@
 package com.company;
 
-public final class Lieutenant extends Rank {
+public final class Lieutenant extends Rank
+{
     private String subdivision;
     private String typeArmy;
     private String badge;
     private String category;
 
     public Lieutenant(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;

@@ -1,13 +1,13 @@
 package com.company;
 
 public final class Admiral extends Rank {
+
     private String subdivision;
     private String typeArmy;
     private String badge;
     private String category;
 
     public Admiral(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.typeArmy = typeArmy;
         this.badge = badge;

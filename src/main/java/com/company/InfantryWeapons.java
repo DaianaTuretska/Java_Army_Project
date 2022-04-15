@@ -1,21 +1,23 @@
 package com.company;
 
+import com.company.interfaces.IWeapons;
+import com.company.enums.WeaponsCategory;
+
 public class InfantryWeapons extends Equipment {
 
-    private String category;
+    private WeaponsCategory category;
     private int power;
 
     InfantryWeapons() {
     }
 
-    public InfantryWeapons(String name, String category, int countEquipment, int power) {
-
+    public InfantryWeapons(String name, WeaponsCategory category, int countEquipment, int power) {
         super(name, countEquipment);
         this.category = category;
     }
 
 
-    public String getCategory() {
+    public WeaponsCategory getCategory() {
         return category;
     }
 
@@ -23,7 +25,7 @@ public class InfantryWeapons extends Equipment {
         return power;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(WeaponsCategory category) {
         this.category = category;
     }
 

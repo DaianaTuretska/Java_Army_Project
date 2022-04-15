@@ -1,6 +1,7 @@
 package com.company;
 
 public class MilitaryMedicine extends Army {
+
     private int battalions;
     private String categories;
     private String rank;
@@ -17,9 +18,6 @@ public class MilitaryMedicine extends Army {
         this.categories = categories;
     }
 
-    public MilitaryMedicine(String name, int countPerson) {
-        super(name, countPerson);
-    }
 
     public String getRank() {
         return rank;

@@ -1,13 +1,13 @@
 package com.company;
 
 public final class AirMarshal extends Rank {
+
     private String subdivision;
     private final String typeArmy = "Air Force";
     private String badge;
     private String category;
 
     public AirMarshal(String typeArmy, String name, String category, String badge, String subdivision) {
-
         super(name);
         this.badge = badge;
         this.subdivision = subdivision;
