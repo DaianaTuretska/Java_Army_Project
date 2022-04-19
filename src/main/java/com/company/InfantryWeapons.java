@@ -16,7 +16,6 @@ public class InfantryWeapons extends Equipment {
         this.category = category;
     }
 
-
     public WeaponsCategory getCategory() {
         return category;
     }
@@ -32,6 +31,7 @@ public class InfantryWeapons extends Equipment {
     public void setPower(int power) {
         this.power = power;
     }
+
 
     public String toString() {
         return "name: " + getName() + " , category:" + category + " , power:" + power + "mm";

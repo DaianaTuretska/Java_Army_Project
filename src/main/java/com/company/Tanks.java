@@ -1,6 +1,8 @@
 package com.company;
 
-public class Tanks extends Equipment {
+import com.company.interfaces.IPredicateTanks;
+
+public class Tanks extends Equipment  {
 
     private String category;
     private int damage;
@@ -28,6 +30,11 @@ public class Tanks extends Equipment {
 
     public void setPower(int power) {
         this.damage = power;
+    }
+
+    public int damage(int damage) {
+        IPredicateTanks<Integer> isPositive = x -> x > 50;
+        return damage;
     }
 
     public String toString() {

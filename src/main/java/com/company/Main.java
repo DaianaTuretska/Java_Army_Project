@@ -1,12 +1,19 @@
 package com.company;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import com.company.enums.AviaCategory;
 import com.company.enums.ShipsCategory;
 import com.company.enums.WeaponsCategory;
 
 public class Main {
 
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
+
     static public void main(String[] args) {
+
+        LOGGER.info("Application started");
 
         Conscripts conscripts1 = new Conscripts("Darius", "Raj", "Kobulyanska street", "+38099425262779", 2000, true);
         Conscripts conscripts2 = new Conscripts("Brandon", "Debonair", "Golovna street", "+380669232110", 1998, false);
@@ -93,6 +100,9 @@ public class Main {
         System.out.println(warships3);
         System.out.println(warships4);
         System.out.println(warships5);
+
+      LOGGER.info("Total Conscripts: " + Conscripts.totalConscripts);
+      LOGGER.info("Application finished");
     }
 }
 
