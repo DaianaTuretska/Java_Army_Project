@@ -43,7 +43,6 @@ public class Tanks extends Equipment  {
 
     public String toString() {
     final StringBuilder info =  new StringBuilder("Tanks:"+"name: " + getName() + " , category:" + category + " , damage:" + damage);
-    Stream.of(category).forEach(faculty -> info.append("\n").append(category));
     return info.toString();
 }
     final void TanksMethod(String[] arg) {
