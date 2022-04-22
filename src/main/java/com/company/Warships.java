@@ -58,12 +58,12 @@ public class Warships extends Equipment implements IWarship {
 
     @Override
     public void arrived_at_port() {
-        System.out.println("The ship arrived at the port!");
+        LOGGER.info("The ship arrived at the port!");
     }
 
     @Override
     public void sailed() {
-        System.out.println("The ship sailed!");
+        LOGGER.info("The ship sailed!");
     }
 
     public void display() {

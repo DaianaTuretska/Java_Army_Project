@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.stream.Stream;
+
 public final class OfficerCadet extends Rank {
 
     private String subdivision;
@@ -52,7 +54,8 @@ public final class OfficerCadet extends Rank {
     }
 
     public String toString() {
-        return "name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category;
+        final StringBuilder info =  new StringBuilder("name:" + getName() + " , typeArmy: " + typeArmy + ", subdivision:" + subdivision + ", badge:" + badge + ", category:" + category);
+        return info.toString();
     }
 
     public void display() {

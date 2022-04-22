@@ -1,6 +1,5 @@
 package com.company;
 
-import com.company.interfaces.IWeapons;
 import com.company.enums.WeaponsCategory;
 
 public class InfantryWeapons extends Equipment {

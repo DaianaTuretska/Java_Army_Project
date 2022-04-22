@@ -1,7 +1,7 @@
 package com.company;
 
 import org.apache.commons.lang3.RandomStringUtils;
-
+import org.apache.commons.lang3.StringUtils;
 import com.company.exeptions.AgeNotMustBeNullException;
 import com.company.interfaces.IBinaryOperatorAge;
 import com.company.interfaces.IFunctionAge;
@@ -33,6 +33,7 @@ public class Conscripts extends Person implements IFunctionAge, IBinaryOperatorA
     public String getId() {
         return id;
     }
+
     public String getAddress() {
         return address;
     }
@@ -49,6 +50,9 @@ public class Conscripts extends Person implements IFunctionAge, IBinaryOperatorA
         this.suitable = suitable;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public void setAddress(String address) {
         this.address = address;
@@ -86,22 +90,18 @@ public class Conscripts extends Person implements IFunctionAge, IBinaryOperatorA
         }
         return age;
     }
-  public void createId(String id) {
-      int length = 4;
-      boolean useLetters = false;
-      boolean useNumbers = true;
-      String generatedId = RandomStringUtils.random(length, useLetters, useNumbers);
-      generatedId = id;
-  }
+    static public String generateId(){
+        return StringUtils.upperCase(RandomStringUtils.randomAlphabetic(4)) +
+                RandomStringUtils.randomNumeric(4);
+    }
 
     public Object age(Object Age) {
-
         IFunctionAge<Integer, String> convert = x-> String.valueOf(x) + " old";
         return Age;
     }
 
     public String toString() {
-        return "Name: " + getName() + " , Lastname: " + getLastname() + " " + ", suitable:" + suitable + ", address :" + address + ", phone:" + phone + ", age" + Age(1990);
+        return "id: "+generateId()+" , Name: " + getName() + " , Lastname: " + getLastname() + " " + ", suitable:" + suitable + ", address :" + address + ", phone:" + phone + ", age" + Age(1990);
     }
 
     public void display() {

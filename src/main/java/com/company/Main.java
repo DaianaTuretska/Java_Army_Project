@@ -1,8 +1,9 @@
 package com.company;
-
+import java.util.Arrays;
+import java.util.List;
+import com.company.enums.MedicineEquipment;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-
 import com.company.enums.AviaCategory;
 import com.company.enums.ShipsCategory;
 import com.company.enums.WeaponsCategory;
@@ -20,7 +21,7 @@ public class Main {
         AirForce airForce = new AirForce("Air Force", 120, 4, "Aviation");
         LandMilitary landMilitary = new LandMilitary("LandMilitary", 120, 4, "tanks");
         MarineCorps marineCorps = new MarineCorps("Marine Corps", 120, 4, "warships");
-        MilitaryMedicine medicine = new MilitaryMedicine("Medicine", "service", 40, 3, "ambulances", "surgeon");
+        MilitaryMedicine medicine = new MilitaryMedicine("Medicine", "service", 40, 3, Arrays.asList(MedicineEquipment.DEFIBRILLATOR, MedicineEquipment.ANESTHESIOLOGY), "surgeon");
         AirMarshal airMarshal1 = new AirMarshal("Air Force", "Air Marshal", "senior officers", "3 stars", "infantry");
         AirMarshal airMarshal2 = new AirMarshal("Air Force", "Vice Air Marshal", "senior officers", "3 stars with sign", "infantry");
         Admiral admiral1 = new Admiral("Land Military", "Admiral", "Senior officers", "4 strips", "Fast");
@@ -100,9 +101,11 @@ public class Main {
         System.out.println(warships3);
         System.out.println(warships4);
         System.out.println(warships5);
-
+        LOGGER.info(armoredCarriers1);
+//        LOGGER.info()
       LOGGER.info("Total Conscripts: " + Conscripts.totalConscripts);
       LOGGER.info("Application finished");
+
     }
 }
 

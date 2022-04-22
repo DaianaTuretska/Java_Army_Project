@@ -1,5 +1,9 @@
 package com.company;
 
+import java.util.stream.Stream;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import com.company.interfaces.IPredicateTanks;
 
 public class Tanks extends Equipment  {
@@ -38,9 +42,10 @@ public class Tanks extends Equipment  {
     }
 
     public String toString() {
-        return "name: " + getName() + " , category:" + category + " , damage:" + damage;
-    }
-
+    final StringBuilder info =  new StringBuilder("Tanks:"+"name: " + getName() + " , category:" + category + " , damage:" + damage);
+    Stream.of(category).forEach(faculty -> info.append("\n").append(category));
+    return info.toString();
+}
     final void TanksMethod(String[] arg) {
         System.out.println("Tanks ready!");
     }
